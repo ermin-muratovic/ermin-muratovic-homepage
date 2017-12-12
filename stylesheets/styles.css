@@ -1,6 +1,4 @@
-/*
- * font size definitions
- */
+/* font size definitions */
 
 /* Extra small devices (phones, less than 600px) */
 /* No media query since this is the default */
@@ -21,162 +19,105 @@ body { font-size: 14px; letter-spacing: 1px; }
     body { font-size: 18px; }
 }
 
-/*
- * custom styles
- */
+/* custom styles */
 
-body { 
-    background-color: #e3e4e5;
+body {
+    font-family: "Montserrat", "Open Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a, a:hover, a:focus, 
-a:active, a:visited {
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+
+a, a:focus, a:active, a:visited {
     color: #00b4ff;
 }
 a:hover {
     color: #0088ff;
 }
 
-header {
-    position: absolute; z-index: 10; top: 0; width: 100%;
-    transition: box-shadow .2s ease, background-color .5s ease;
-}
-
-header nav {
-    display: flex; flex-direction: row;
-    transition: width 2s ease;
-}
-header nav ul li a,
-header nav ul li:hover a {
-    background: transparent !important;
-}
-header nav li:hover {
-    text-decoration: underline;
-}
-
-header .title {
-    flex: 1; margin: 10px 0;
-    text-shadow: 0px 0px 2px #383c3e;
-}
-header .title h1 {
-    margin: 0;
-    font-size: 20px;
-    letter-spacing: 10px;
-}
-header .title a,
-header .title a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-header .title a:hover {
-    color: #f1f2f3;
-}
-
-section {
-    position: relative; z-index: 1;
-}
-
-/* Index */
-.banner {
-    height: 90vh; padding-top: 20vh;
-    
-    background-color: #383c3e;
-    color: #fff; text-shadow: 0px 0px 2px #383c3e;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: relative;
-}
-.banner .banner-background {
-    position: absolute; opacity: 0;
-    height: 100%; width: 100%; top: 0;
-    
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-}
-.banner .title-message {
-    text-align: center;
-    max-width: 100%;
-    opacity: 0;
-}
-
-@media (max-width: 960px) {
-    .banner .title-message {
-        font-size: 24px;
-    }
-}
-
-.banner .description {
-    text-align: center;
-    padding: 0px 20%;
-    margin: 10px 0px;
-    opacity: 0;
-}
-
-.banner.active .banner-background {
-    animation: fadeIn 1s ease-in;
-    opacity: 1;
-}
-.banner.active .title-message {
-    animation: fadeIn 1s ease .75s;
-    animation-fill-mode: both;
-    opacity: 1;
-}
-.banner.active .description {
+.fadeIn {
     animation: fadeIn 1s ease 1.75s;
     animation-fill-mode: both;
     opacity: 1;
-}
-.banner.active .description.detail {
-    animation-delay: 2.5s;
-    opacity: 1;
-}
-
-.contact {
-    color: #383c3e;
-}
-.contact > div {
-    margin: 20px 10px;
-}
-.centered {
-    text-align: center;
-}
-
-/* Impressum */
-
-section.impressum {
-    height: 120vh; padding-top: 5%;
-    
-    background-color: #cac5bf;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-    
-    text-shadow: 0px 0px 0px #fff;    
-}
-section.impressum .container > * {
-    max-width: 100%; padding-right: 50%;
-}
-
-footer {
-    background-color: #383c3e;
-}
-footer .impressum {
-    text-align: right;
-    color: #f1f2f2;
-}
-footer .impressum p {
-    font-size: 14px;
-    margin: 10px;
-}
-footer .impressum p .copyright {
-    font-size: 13px;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+header {
+    background: #fafafa;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 33%, #fafafa 100%);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul {
+    width: 80vw;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #e91e63;
+}
+nav ul li a.primary {
+    color: #e91e63;
+    border: 1px solid #e91e63;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    line-height: 2em;
+}
+
+#banner .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#banner .image img {
+    height: 100vh;
+    max-width: unset;
+}
+
+#banner .content {
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner p {
+    color: #696969;
+    margin-bottom: 15px;
+}
+#banner p.first {
+    color: #000;
+    font-weight: 500;
+}
+#banner h1 {
+    margin-bottom: 30px;
 }
