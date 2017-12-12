@@ -1,4 +1,4 @@
 # ermin-muratovic.github.io
 Personal website
 
-Visit the website at [www.erminmuratovic.at](http://erminmuratovic.at).
+Visit the website at [erminmuratovic.at](http://erminmuratovic.at)
