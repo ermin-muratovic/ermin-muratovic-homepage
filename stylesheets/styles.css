@@ -193,7 +193,7 @@ nav#menu ul li a.primary {
     flex-direction: row;
 }
 .main-content .social .social-button {
-    margin: 10px 10px 0px -8px;
+    margin: 10px 10px 10px -8px;
     font-size: 1.2em;
 }
 .main-content .social .social-button a {
