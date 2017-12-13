@@ -1,25 +1,6 @@
-/* font size definitions */
-
-/* Extra small devices (phones, less than 600px) */
-/* No media query since this is the default */
-body { font-size: 14px; letter-spacing: 1px; }
-
-/* Small devices (tablets, 600px and up) */
-@media (min-width: 600px) {
-    body { font-size: 14px; }
-}
-
-/* Medium devices (desktops, 960px and up) */
-@media (min-width: 960px) {
-    body { font-size: 16px; }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    body { font-size: 18px; }
-}
-
-/* custom styles */
+/*
+ * GENERAL
+ */
 
 body {
     font-family: "Montserrat", "Open Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -43,81 +24,253 @@ a:hover {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
+/*
+ * HEADER
+ */
 header {
-    background: #fafafa;
-    background: linear-gradient(to bottom right, #fff 0%, #fff 33%, #fafafa 100%);
+    position: fixed;
 }
 
-nav {
-    display: flex;
+.menu-toggle {
+    z-index: 1;
+    display: block;
+    position: relative;
+    user-select: none;
+}
+.menu-toggle input {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 32px;
+    left: 16px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+.menu-toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+.menu-toggle span:nth-last-child(4) {
+    margin-top: 20px;
+}
+.menu-toggle span:nth-last-child(2) {
+    margin-bottom: 20px;
+    transform-origin: 0% 100%;
+}
+
+.menu-toggle input:checked ~ span {
+    opacity: 1;
+    background: #232323;
+    transform: rotate(405deg) translate(-2px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-405deg) translate(0, -1px);
+}
+
+nav#menu {
+    position: absolute;
+    top: -20px;
+    width: 100vw;
+    height: 100vh;
+    padding: 125px 50px 50px 50px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 2em;
+    line-height: 2em;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    /*display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;*/
+}
+.menu-toggle input:checked ~ nav#menu
+{
+    transform: none;
 }
 
-nav ul {
+nav#menu ul {
     width: 80vw;
     margin-top: 30px;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-end;*/
 }
 
-nav ul li {
+nav#menu ul li {
     margin: 10px;
 }
 
-nav ul li a {
+nav#menu ul li a {
     color: #000;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
 }
-nav ul li a:hover {
+nav#menu ul li a:hover {
     color: #e91e63;
 }
-nav ul li a.primary {
+nav#menu ul li a.primary {
     color: #e91e63;
     border: 1px solid #e91e63;
     border-radius: 10px;
-    padding: 10px 15px;
-    margin: 10px 15px;
 }
 
-#banner {
-    display: flex;
-    flex-direction: row;
-    line-height: 2em;
-}
-
-#banner .image {
+/*
+ * CONTENT
+ */
+.main-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+
+    background: #fff;
+    line-height: 2em;
+    background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
+}
+.main-content > div {
+    flex: 1;
 }
 
-#banner .image img {
-    height: 100vh;
-    max-width: unset;
-}
-
-#banner .content {
-    padding: 10vw;
+.main-content .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 15vh 5vw 0 5vw;
 }
-
-#banner p {
+.main-content .text h1 {
+    margin-left: -3px;
+    margin-bottom: 30px;
+}
+.main-content .text p {
     color: #696969;
     margin-bottom: 15px;
 }
-#banner p.first {
+.main-content .text p.first {
     color: #000;
     font-weight: 500;
 }
-#banner h1 {
-    margin-bottom: 30px;
+
+.main-content .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-content .image img {
+    max-height: 90vh;
+}
+
+.main-content .social {
+    display: flex;
+    flex-direction: row;
+}
+.main-content .social .social-button {
+    margin: 10px 10px 0px -8px;
+    font-size: 1.2em;
+}
+.main-content .social .social-button a {
+    color: #696969;
+    padding: 5px 10px;
+}
+.main-content .social .social-button a.linkedin:hover {
+    color: #0077b5;
+}
+.main-content .social .social-button a.facebook:hover {
+    color: #3b5998;
+}
+.main-content .social .social-button a.twitter:hover {
+    color: #1da1f2;
+}
+.main-content .social .social-button a.github:hover {
+    color: #000;
+}
+
+/*
+ * FOOTER
+ */
+footer {
+    padding: 5vw;
+}
+
+footer p.copyright {
+    font-size: .8em;
+}
+
+/* Extra small devices (phones, less than 600px) */
+/* No media query since this is the default */
+body { font-size: 18px; letter-spacing: 1px; }
+
+/* Small devices (tablets, 600px and up) */
+@media (min-width: 600px) {
+}
+
+/* Medium devices (desktops, 960px and up) */
+@media (min-width: 960px) {
+
+    header {
+        position: absolute;
+    }
+
+    .menu-toggle input,
+    .menu-toggle span {
+        display: none;
+    }
+
+    nav#menu {
+        top: 0;
+        transform: translate(0,0);
+        height: auto;
+        background: none;
+        padding: 25px;
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav#menu ul {
+        width: 80vw;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav#menu ul li a.primary {
+        margin: 0px 10px;
+    }
+
+    .main-content {
+        flex-direction: row;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
