@@ -295,11 +295,14 @@ nav#menu ul li a.primary:hover {
 .portfolio .portfolio-list {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .portfolio .portfolio-list .portfolio-item {
     flex: 1;
     position: relative;
+    border: 1px solid #000;
+    margin: 10px 10px 10px 0px;
 }
 
 .portfolio-item .overlay,
@@ -311,14 +314,21 @@ nav#menu ul li a.primary:hover {
     left: 0;
 }
 
-.portfolio-item .overlay {
-    background: #ccc;
-    opacity: .6;
-}
 .portfolio-item .overlay-container {
+    display: none;
+}
+.portfolio-item:hover .overlay-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.portfolio-item .overlay-container .overlay {
+    z-index: 1;
+    opacity: .6;
+    background: #eee;
+}
+.portfolio-item .overlay-container .content {
+    z-index: 2;
 }
 .portfolio-item a {
     color: #000;
