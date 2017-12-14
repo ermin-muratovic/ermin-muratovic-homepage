@@ -37,6 +37,10 @@ button.rotate-icon:hover i {
     opacity: 1;
 }
 
+p > *, button > * {
+    vertical-align: middle;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -191,11 +195,12 @@ nav#menu ul li a.primary:hover {
 
 .banner {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    overflow: hidden;
     background: #fff;
     line-height: 2em;
     padding: 150px 5vw 0 5vw;
+    min-height: 80vh;
     background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
 }
 .banner > div {
@@ -225,10 +230,14 @@ nav#menu ul li a.primary:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
 
 .banner .image img {
     max-height: 90vh;
+    max-width: unset;
+    left: 0;
+    position: absolute;
 }
 
 .banner button {
@@ -305,6 +314,9 @@ nav#menu ul li a.primary:hover {
 
 .social {
     padding: 20px 5vw;
+}
+.social p {
+    margin-bottom: -10px !important;
 }
 .social .social-list {
     display: flex;
@@ -393,6 +405,10 @@ body { font-size: 18px; letter-spacing: 1px; }
 
     .banner {
         flex-direction: row;
+    }
+
+    .banner .image img {
+        position: relative;
     }
 
     .expertin .expertin-list {
