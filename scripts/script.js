@@ -11,6 +11,11 @@ function fadeInElements() {
 
 }
 
+function scrollToMore() {
+    var element = document.getElementById("expertin");
+    element.scrollIntoView({ behavior: "smooth" });
+}
+
 window.onload = function() {
     loadImages();
 };
