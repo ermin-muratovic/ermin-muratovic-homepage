@@ -13,7 +13,7 @@ function fadeInElements() {
 
 function scrollToMore() {
     var element = document.getElementById("expertin");
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
 window.onload = function() {
