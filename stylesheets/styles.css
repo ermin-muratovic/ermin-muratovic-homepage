@@ -13,15 +13,21 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     margin-bottom: 30px;
 }
+h2 {
+    margin-bottom: 15px;
+}
 
+a {
+    text-decoration: none;
+}
 a, a:focus, a:active, a:visited {
     color: #00b4ff;
 }
 a:hover {
-    color: #0088ff;
+    color: #e91e63;
 }
 a.current {
-    border-bottom: #0088ff;
+    border-bottom: #e91e63;
 }
 
 button.rotate-icon i {
@@ -37,8 +43,8 @@ button.rotate-icon:hover i {
     opacity: 1;
 }
 
-p > *, button > * {
-    vertical-align: middle;
+p.align-middle > *, button.align-middle > * {
+    vertical-align: middle !important;
 }
 
 @keyframes fadeIn {
@@ -241,12 +247,12 @@ nav#menu ul li a.primary:hover {
 }
 
 .banner button {
-    color: #000;
+    color: #f0f0f0;
     background: #e91e63;
     border: none;
     padding: 15px 20px;
     font-size: 1em;
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 .banner button i {
     margin-left: 5px;
@@ -255,14 +261,22 @@ nav#menu ul li a.primary:hover {
 .banner .social {
     padding: 0;
 }
+.banner .social p {
+    margin-bottom: -10px !important;
+}
 
 .expertin {
     padding: 100px 5vw;
 }
 
+.expertin p {
+    color: #494949;
+}
+
 .expertin .expertin-list {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .expertin .expertin-list .expertin-item {
@@ -314,9 +328,6 @@ nav#menu ul li a.primary:hover {
 
 .social {
     padding: 20px 5vw;
-}
-.social p {
-    margin-bottom: -10px !important;
 }
 .social .social-list {
     display: flex;
@@ -401,6 +412,9 @@ body { font-size: 18px; letter-spacing: 1px; }
     nav#menu ul li a.primary {
         margin: 0px 10px;
         line-height: 1em;
+    }
+    nav#menu ul li a.primary:hover {
+        margin: -1px 9px;
     }
 
     .banner {
