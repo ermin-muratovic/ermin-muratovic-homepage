@@ -321,6 +321,10 @@ nav#menu ul li a.primary:hover {
     opacity: 0;
 }
 
+.portfolio .portfolio-list .portfolio-item.reverse {
+    flex-direction: column-reverse;
+}
+
 .portfolio .portfolio-list .portfolio-item.show {
     animation: fadeIn 1.5s ease .5s;
     animation-fill-mode: both;
@@ -526,7 +530,8 @@ body { font-size: 18px; letter-spacing: 1px; }
         flex-direction: row;
     }
 
-    .portfolio .portfolio-list .portfolio-item {
+    .portfolio .portfolio-list .portfolio-item,
+    .portfolio .portfolio-list .portfolio-item.reverse {
         margin: 30px 10vw;
         flex-direction: row;
     }
