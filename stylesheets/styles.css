@@ -37,12 +37,6 @@ button.rotate-icon:hover i {
     transform: rotate(90deg);
 }
 
-.fadeIn {
-    animation: fadeIn 1s ease 1.75s;
-    animation-fill-mode: both;
-    opacity: 1;
-}
-
 p.align-middle > *, button.align-middle > * {
     vertical-align: middle !important;
 }
@@ -217,6 +211,10 @@ nav#menu ul li a.primary:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.banner .text.scale {
+    transform: scale(0.9);
 }
 .banner .text h1 {
     margin-left: -3px;
@@ -258,9 +256,6 @@ nav#menu ul li a.primary:hover {
     margin-left: 5px;
 }
 
-.banner .social {
-    padding: 0;
-}
 .banner .social p {
     margin-bottom: -10px !important;
 }
@@ -281,7 +276,14 @@ nav#menu ul li a.primary:hover {
 
 .expertin .expertin-list .expertin-item {
     flex: 1;
+    opacity: 0;
     padding-right: 3vw;
+}
+
+.expertin .expertin-list .expertin-item.show {
+    animation: fadeIn 1.5s ease .5s;
+    animation-fill-mode: both;
+    opacity: 1;
 }
 
 .expertin .expertin-list .expertin-item i {
@@ -336,9 +338,6 @@ nav#menu ul li a.primary:hover {
     padding: 10px;
 }
 
-.social {
-    padding: 20px 5vw;
-}
 .social .social-list {
     display: flex;
     flex-direction: row;
@@ -364,6 +363,37 @@ nav#menu ul li a.primary:hover {
 }
 .social .social-button a.github:hover {
     color: #000;
+}
+
+.contact {
+    padding: 20px 5vw;
+}
+
+.contact .contact-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contact .btn-messenger {
+    margin: 20px 20px 40px 0px;
+}
+
+.contact .btn-messenger a {
+    padding: 12px 25px;
+    border-radius: 3px;
+    background-color: #1365e7;
+    box-shadow: 0 6px 16px 0 rgba(7, 21, 66, .29);
+    transition: box-shadow .2s ease;
+    color: #fff;
+}
+
+.contact .btn-messenger a:hover {
+    box-shadow: none;
+}
+
+.impressum {
+    margin-bottom: 100px;
 }
 
 /*
@@ -441,6 +471,19 @@ body { font-size: 18px; letter-spacing: 1px; }
 
     .portfolio .portfolio-list {
         flex-direction: row;
+    }
+
+    .contact .contact-list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact .btn-messenger {
+        margin: 0px 20px 0px 0px;
+    }
+
+    .contact .text {
+        max-width: 70vw;
     }
 }
 

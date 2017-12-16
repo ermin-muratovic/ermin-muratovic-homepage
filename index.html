@@ -72,16 +72,16 @@
                         <p>digital design and development expert</p>
                     </h1>
                     <div class="menu-toggle">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="showmenucheckbox" />
                         <span></span>
                         <span></span>
                         <span></span>
                         <nav id="menu">
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="mailto:office@muratovic.at" class="primary">Contact Me!</a></li>
+                                <li><a href="javascript:void(0)" onclick="scrollToPortfolio()">Portfolio</a></li>
+                                <li><a href="javascript:void(0)" onclick="scrollToBlog()">Blog</a></li>
+                                <li><a href="javascript:void(0)" onclick="scrollToContact()" class="primary">Contact Me!</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -142,45 +142,45 @@
                 <div class="expertin" id="expertin">
                     <h1>Expert in</h1>
                     <div class="expertin-list">
-                        <div class="expertin-item">
+                        <div class="expertin-item" data-animate data-animate-offset="10">
                             <i class="fal fa-desktop fa-5x"></i>
                             <h2>Web</h2>
                             <p>Design and development of web solutions from personal blog or small business websites to e-commerce stores and web applications.</p>
                         </div>
-                        <div class="expertin-item">
+                        <div class="expertin-item" data-animate data-animate-offset="10">
                             <i class="fal fa-mobile fa-5x"></i>
                             <h2>Mobile</h2>
                             <p>Web applications optimized for mobile devices or native applications developed for Android and iOS.</p>
                         </div>
-                        <div class="expertin-item">
+                        <div class="expertin-item" data-animate data-animate-offset="10">
                             <i class="fal fa-cloud fa-5x"></i>
                             <h2>Hosting</h2>
                             <p>Web hosting and long-term support from a single source at a low flat-rate.</p>
                         </div>
                     </div>
                     <div class="expertin-list">
-                        <div class="expertin-item">
+                        <div class="expertin-item" data-animate data-animate-offset="10">
                             <i class="fal fa-briefcase fa-5x"></i>
                             <h2>Marketing</h2>
-                            <p>Planning and running social media campaigns for your website, application, product or service.</p>
+                            <p>Planning and running e-mail newsletter and social media campaigns for your website, application, product or service.</p>
                         </div>
-                        <div class="expertin-item">
+                        <div class="expertin-item" data-animate data-animate-offset="10">
                             <i class="fal fa-paint-brush fa-5x"></i>
                             <h2>Print</h2>
                             <p>Design and print of banners, flyers, corporate or personal business cards, letterheads, brochures, promotional items, signboards and other printed materials.</p>
                         </div>
-                        <div class="expertin-item">
+                        <div class="expertin-item" data-animate data-animate-offset="10">
                             <i class="fal fa-handshake fa-5x"></i>
                             <h2>Social Media</h2>
                             <p>Professional social media maintenance for your online presence to keep you connected with your online followers and fans.</p>
                         </div>
                     </div>
-                    <h3><a href="#portfolio">See my work</a></h3>
+                    <h3><a href="javascript:void(0)" onclick="scrollToPortfolio()">See my work</a></h3>
                 </div>
                 <div class="portfolio" id="portfolio">
                     <h1>Portfolio</h1>
                     <div class="portfolio-list">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-animate>
                             <img src="resources/images/default.png" data-src="resources/images/friseurstudio-edina.png" />
                             <div class="overlay-container">
                                 <div class="overlay"></div>
@@ -189,7 +189,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-animate>
                             <img src="resources/images/default.png" data-src="resources/images/privat-auto-import.png" />
                             <div class="overlay-container">
                                 <div class="overlay"></div>
@@ -200,33 +200,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="social">
-                    <p>Stay in contact</p>
-                    <div class="social-list">
-                        <div class="social-button">
-                            <a class="linkedin" target="_blank" href="https://linkedin.com/in/ermin-muratovic">
-                                <i class="fab fa-linkedin fa-lg"></i>
-                            </a>
+                <div class="contact" id="contact">
+                    <div class="text">
+                        <h2>Want to work together? Get in touch!</h2>
+                        <p>You have an idea for a project? Awesome! Trust your project in the hands of an expert whose commitment to quality is unyielding. Let's get in touch.</p>
+                        <br/>
+                        <div class="contact-list">
+                            <div class="btn-messenger">
+                                <a href="http://m.me/ermin.muratovic" target="_blank">
+                                    <i class="fab fa-facebook-messenger fa-lg"></i>
+                                    Say Hi in Messenger
+                                </a>
+                            </div>
+                            <div>
+                                <p>Or use the traditional way</p>
+                                <a href="mailto:ermin@muratovic.at">ermin@muratovic.at</a>
+                            </div>
                         </div>
-                        <div class="social-button">
-                            <a class="twitter" target="_blank" href="https://twitter.com/erminm">
-                                <i class="fab fa-twitter fa-lg"></i>
-                            </a>
-                        </div>
-                        <div class="social-button">
-                            <a class="instagram" target="_blank" href="https://www.instagram.com/erminmurat/">
-                                <i class="fab fa-instagram fa-lg"></i>
-                            </a>
-                        </div>
-                        <div class="social-button">
-                            <a class="github" target="_blank" href="https://github.com/ermin-muratovic">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-                        </div>
+                        <div class="social">
+                            <p>Stay in contact</p>
+                            <div class="social-list">
+                                <div class="social-button">
+                                    <a class="linkedin" target="_blank" href="https://linkedin.com/in/ermin-muratovic">
+                                        <i class="fab fa-linkedin fa-lg"></i>
+                                    </a>
+                                </div>
+                                <div class="social-button">
+                                    <a class="twitter" target="_blank" href="https://twitter.com/erminm">
+                                        <i class="fab fa-twitter fa-lg"></i>
+                                    </a>
+                                </div>
+                                <div class="social-button">
+                                    <a class="instagram" target="_blank" href="https://www.instagram.com/erminmurat/">
+                                        <i class="fab fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+                                <div class="social-button">
+                                    <a class="github" target="_blank" href="https://github.com/ermin-muratovic">
+                                        <i class="fab fa-github fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </main>
             <footer class="page-footer">
+                <div class="impressum">
+                    <h2>Impressum</h2>
+                    <p>Ermin Muratović</p>
+                    <p>Rosentaler Straße 103/3</p>
+                    <p>9020 Klagenfurt am Wörthersee</p>
+                    <br />
+                    <p>UID: ATU69487423</p>
+                    <p>Behörde gem. ECG: Magistrat der Stadt Klagenfurt</p>
+                    <br />
+                    <a href="https://www.wkoecg.at/Web/Ecg.aspx?FirmaID=68532e82-4716-49d8-9d75-50102b06e38f">Informationspflicht lt. ECG und Mediengesetz wko.at</a>
+                </div>
                 <p class="copyright">&copy; 2017 - Ermin Muratović</p>
             </footer>
         </div>
