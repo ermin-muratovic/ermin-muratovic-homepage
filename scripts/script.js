@@ -93,6 +93,8 @@ window.onload = function() {
 };
 
 window.onscroll = function(){
-    fadeInElements();
+    setTimeout(function() {
+        fadeInElements();
+    }, 200);
     scaleLandingText();
 };
