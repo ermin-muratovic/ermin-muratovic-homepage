@@ -182,7 +182,8 @@ nav#menu ul li a.current {
 nav#menu ul li a.primary {
     color: #e91e63;
     border: 1px solid #e91e63;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
     line-height: 3em;
 }
 nav#menu ul li a.primary:hover {
@@ -202,6 +203,7 @@ nav#menu ul li a.primary:hover {
     padding: 150px 5vw 0 5vw;
     min-height: 80vh;
     background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
+    border: 1px solid #f0f0f0;
 }
 .banner > div {
     flex: 1;
@@ -292,6 +294,15 @@ nav#menu ul li a.primary:hover {
 
 .portfolio {
     padding: 100px 5vw;
+    background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
+    border: 1px solid #f0f0f0;
+}
+.portfolio > h1 {
+    margin-bottom: 0px;
+}
+
+.portfolio > h1+p {
+    margin-bottom: 30px;
 }
 
 .portfolio .portfolio-list {
@@ -301,10 +312,36 @@ nav#menu ul li a.primary:hover {
 }
 
 .portfolio .portfolio-list .portfolio-item {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     position: relative;
-    border: 1px solid #000;
-    margin: 10px 10px 10px 0px;
+    padding: 30px 0px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.portfolio .portfolio-list .portfolio-item .showcase {
+    margin-top: 30px;
+}
+.portfolio .portfolio-list .portfolio-item .description p {
+    color: #696969;
+    font-size: .8em;
+}
+.portfolio .portfolio-list .portfolio-item .description p.type {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+.portfolio .portfolio-list .portfolio-item .description a {
+    color: #232323;
+    border: 1px solid #232323;
+    border-radius: 20px;
+    padding: 10px 20px;
+    line-height: 3em;
+    margin-top: 10px;
+}
+
+.portfolio .portfolio-list .portfolio-item .description a:hover {
+    color: #e91e63;
+    border: 1px solid #e91e63;
 }
 
 .portfolio-item .overlay,
@@ -338,6 +375,17 @@ nav#menu ul li a.primary:hover {
     padding: 10px;
 }
 
+.blog {
+    padding: 100px 5vw;
+}
+.blog > h1 {
+    margin-bottom: 0px;
+}
+
+.blog > h1+p {
+    margin-bottom: 30px;
+}
+
 .social .social-list {
     display: flex;
     flex-direction: row;
@@ -366,7 +414,9 @@ nav#menu ul li a.primary:hover {
 }
 
 .contact {
-    padding: 20px 5vw;
+    padding: 100px 5vw;
+    background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
+    border: 1px solid #f0f0f0;
 }
 
 .contact .contact-list {
@@ -469,8 +519,17 @@ body { font-size: 18px; letter-spacing: 1px; }
         flex-direction: row;
     }
 
-    .portfolio .portfolio-list {
+    .portfolio .portfolio-list .portfolio-item {
+        margin: 30px 10vw;
         flex-direction: row;
+    }
+    .portfolio .portfolio-list .portfolio-item .description {
+        flex: 1;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .portfolio .portfolio-list .portfolio-item .showcase {
+        flex: 1;
     }
 
     .contact .contact-list {
