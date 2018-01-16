@@ -8,6 +8,19 @@ description: Ermin Muratovic Portfolio Homepage
 author:
   name: Ermin Muratovic
 
+social-network-links:
+  rss: true
+  email: "ermin@muratovic.at"
+  facebook: ermin.muratovic
+  github: ermin-muratovic
+  twitter: erminm
+  linkedin: ermin-muratovic
+  instagram: erminmurat
+
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
 
 google_analytics: "UA-59508056-1"
 
@@ -19,10 +32,9 @@ paginate: 5
 
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
 
-safe: false
 source: app
 destination: deploy
+
+plugins:
+  - jekyll-paginate
