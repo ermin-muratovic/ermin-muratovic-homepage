@@ -27,8 +27,8 @@ google_analytics: "UA-59508056-1"
 timezone: "Europe/Vienna"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+# permalink: /:year-:month-:day-:title/
+# paginate: 5
 
 kramdown:
   input: GFM
@@ -36,5 +36,15 @@ kramdown:
 source: app
 destination: deploy
 
-plugins:
-  - jekyll-paginate
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Vagrantfile
+
+# plugins:
+#  - jekyll-paginate
