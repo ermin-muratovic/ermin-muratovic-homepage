@@ -7,19 +7,19 @@ description: Ermin Muratovic Portfolio Homepage
 author:
   name: Ermin Muratovic
 
-social-network-links:
-  rss: true
-  email: "ermin@muratovic.at"
-  facebook: ermin.muratovic
-  github: ermin-muratovic
-  twitter: erminm
-  linkedin: ermin-muratovic
-  instagram: erminmurat
+#social-network-links:
+#  rss: true
+#  email: "ermin@muratovic.at"
+#  facebook: ermin.muratovic
+#  github: ermin-muratovic
+#  twitter: erminm
+#  linkedin: ermin-muratovic
+#  instagram: erminmurat
 
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+#share-links-active:
+#  twitter: true
+#  facebook: true
+#  linkedin: true
 
 timezone: Europe/Vienna
 markdown: kramdown
@@ -32,16 +32,6 @@ kramdown:
 
 source: app
 destination: deploy
-
-exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - Vagrantfile
 
 # plugins:
 #  - jekyll-paginate
