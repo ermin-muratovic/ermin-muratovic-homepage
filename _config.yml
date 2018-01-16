@@ -2,7 +2,6 @@
 
 baseurl: ''
 title: Ermin Muratovic Homepage
-markdown: redcarpet
 safe: false
 source: app
 destination: deploy
