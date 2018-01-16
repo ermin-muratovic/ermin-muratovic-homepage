@@ -1,10 +1,28 @@
 # Site settings
 
-baseurl: ''
+url: "http://erminmuratovic.com"
+baseurl: ""
 title: Ermin Muratovic Homepage
+description: Ermin Muratovic Portfolio Homepage
+
+author:
+  name: Ermin Muratovic
+
+
+google_analytics: "UA-59508056-1"
+
+timezone: "Europe/Vienna"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
 safe: false
 source: app
 destination: deploy
-
-timezone: Europe/Vienna
-highlighter: false
