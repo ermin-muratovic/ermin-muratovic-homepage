@@ -21,14 +21,14 @@ share-links-active:
   facebook: true
   linkedin: true
 
-timezone: "Europe/Vienna"
-# markdown: kramdown
-# highlighter: rouge
+timezone: Europe/Vienna
+markdown: kramdown
+highlighter: rouge
 # permalink: /:year-:month-:day-:title/
 # paginate: 5
 
-# kramdown:
-#   input: GFM
+kramdown:
+  input: GFM
 
 source: app
 destination: deploy
