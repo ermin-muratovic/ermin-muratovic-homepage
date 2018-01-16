@@ -30,9 +30,5 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-safe: false
-source: app
-destination: deploy
-
 # plugins:
 #  - jekyll-paginate
