@@ -11,7 +11,7 @@ function fadeInElements() {
     var elements = getElementsWithAttribute('data-animate');
     for(var i = 0, n = elements.length; i < n; i++) {
         var offset = parseInt(elements[i].getAttribute('data-animate-offset'))||0;
-        var objectBottom = getPosition(elements[i]).top+offset; //elements.position.top + elements.outerHeight
+        var objectBottom = getPosition(elements[i]).top+offset;
         var windowBottom = getScrollPosition() + getWindowHeight();
 
         if(objectBottom < windowBottom) {

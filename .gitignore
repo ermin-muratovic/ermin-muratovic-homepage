@@ -3,6 +3,7 @@ bin/
 gen/
 dist/
 docker/
+deploy/
 
 # OSX files
 .DS_Store

@@ -1,0 +1,11 @@
+# Site settings
+
+baseurl: ''
+title: Ermin Muratovic Homepage
+markdown: redcarpet
+safe: false
+source: app
+destination: deploy
+
+timezone: Europe/Vienna
+highlighter: false
