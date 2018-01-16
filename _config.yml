@@ -30,8 +30,8 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-source: "app"
-destination: "deploy"
+source: ./app
+destination: ./deploy
 
 exclude:
   - CHANGELOG.md
