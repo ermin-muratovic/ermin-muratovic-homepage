@@ -3,19 +3,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        {% if page.use-site-title %}
-            {{ site.title }} {{ site.title-separator }} {{ site.description }}
-        {% elsif page.title %}
-            {{ page.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
-    </title>
+    <title>{{ page.title }}</title>
 
     <meta name="author" content="Ermin Muratović">
-    <meta name="description" content="Ermin Muratović - Ihr persönlicher Webentwickler für moderne Webseiten, Webanwendungen, mobile Anwendungen und alles rund um Webdesign und Online-Marketing.">
-    <meta name="language" content="de">
+    {% if page.title %}
+        {{ page.title }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+    <meta name="description" content="{{ page.content | strip_html | truncatewords:175 }}">
+    <meta name="language" content="en">
     <meta name="city" content="Klagenfurt">
     <meta name="country" content="Austria">
     <meta name="state" content="Carinthia">
@@ -26,20 +23,20 @@
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.muratovic.at">
-    <meta property="og:title" content="Ermin Muratović - Ihr persönlicher Webentwickler">
-    <meta property="og:description" content="Webentwickler für moderne Webseiten, Webanwendungen, mobile Anwendung und alles rund um Webdesing und Online-Marketing">
-    <meta property="og:image" content="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=240">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:site_name" content="muratovic.at">
+    <meta property="og:url" content="http://www.erminmuratovic.com">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.content | strip_html | truncatewords:175 }}">
+    <meta property="og:image" content="{{ page.image }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="erminmuratovic.com">
 
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="@erminm">
     <meta property="twitter:creator" content="@erminm">
-    <meta property="twitter:url" content="http://www.muratovic.at">
-    <meta property="twitter:title" content="Ermin Muratović - Ihr persönlicher Webentwickler">
-    <meta property="twitter:description" content="Webentwickler für moderne Webseiten, Webanwendungen, mobile Anwendung und alles rund um Webdesing und Online-Marketing">
-    <meta property="twitter:image" content="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=240">
+    <meta property="twitter:url" content="http://www.erminmuratovic.com">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta property="twitter:description" content="{{ page.content | strip_html | truncatewords:175}}">
+    <meta property="twitter:image" content="{{ page.image }}">
 
     <meta rel="author" href="https://plus.google.com/+ErminMuratovic">
     <link rel="shortcut icon" href="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=32" type="image/x-icon">

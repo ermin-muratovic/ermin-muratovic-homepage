@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Ermin Muratović
 ---
 
 <style>
