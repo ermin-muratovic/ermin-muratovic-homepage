@@ -4,6 +4,7 @@ gen/
 dist/
 docker/
 deploy/
+_site/
 
 # OSX files
 .DS_Store

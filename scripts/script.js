@@ -11,6 +11,8 @@ function fadeInElements() {
     var elements = getElementsWithAttribute('data-animate');
     for(var i = 0, n = elements.length; i < n; i++) {
         var offset = parseInt(elements[i].getAttribute('data-animate-offset'))||0;
+        if(elements[i].getAttribute('data-animate-offset-element-height') != null)
+            offset = elements[i].clientHeight;
         var objectBottom = getPosition(elements[i]).top+offset;
         var windowBottom = getScrollPosition() + getWindowHeight();
 
@@ -81,11 +83,17 @@ function scrollToContact() {
 }
 
 function scaleLandingText() {
-    var element = document.querySelector('#banner .text');
-    if(getScrollPosition() > 0)
-        element.classList.add("scale");
-    else
-        element.classList.remove("scale");
+    var elements = getElementsWithAttribute('data-scale');
+    for(var i = 0, n = elements.length; i < n; i++) {
+        var objectTop = getPosition(elements[i]).top;
+        var windowTop = getScrollPosition();
+
+        if(objectTop < windowTop) {
+            elements[i].classList.add("scale");
+        } else {
+            elements[i].classList.remove("scale");
+        }
+    }
 }
 
 window.onload = function() {

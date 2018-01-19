@@ -1,70 +1,12 @@
-<!doctype  html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+---
 
-    <title>Ermin Muratović</title>
-
-    <meta name="author" content="Ermin Muratović">
-    <meta name="description" content="Ermin Muratović - Ihr persönlicher Webentwickler für moderne Webseiten, Webanwendungen, mobile Anwendungen und alles rund um Webdesign und Online-Marketing.">
-    <meta name="language" content="de">
-    <meta name="city" content="Klagenfurt">
-    <meta name="country" content="Austria">
-    <meta name="state" content="Carinthia">
-    <meta name="zipcode" content="9020">
-    <meta name="geo.region" content="AT">
-    <meta name="geo.placename" content="Klagenfurt">
-    <!-- TODO: meta name="geo.position" content="46.62;13.84" /-->
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.muratovic.at">
-    <meta property="og:title" content="Ermin Muratović - Ihr persönlicher Webentwickler">
-    <meta property="og:description" content="Webentwickler für moderne Webseiten, Webanwendungen, mobile Anwendung und alles rund um Webdesing und Online-Marketing">
-    <meta property="og:image" content="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=240">
-    <meta property="og:locale" content="de_DE">
-    <meta property="og:site_name" content="muratovic.at">
-
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:site" content="@erminm">
-    <meta property="twitter:creator" content="@erminm">
-    <meta property="twitter:url" content="http://www.muratovic.at">
-    <meta property="twitter:title" content="Ermin Muratović - Ihr persönlicher Webentwickler">
-    <meta property="twitter:description" content="Webentwickler für moderne Webseiten, Webanwendungen, mobile Anwendung und alles rund um Webdesing und Online-Marketing">
-    <meta property="twitter:image" content="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=240">
-
-    <meta rel="author" href="https://plus.google.com/+ErminMuratovic">
-    <link rel="shortcut icon" href="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=32" type="image/x-icon">
-    <meta name="theme-color" content="#e3e4e5">
-
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Montserrat:400italic,600italic,100,300,400,500,600">
-    <link rel="stylesheet" href="components/fontawesome-pro-5.0.1/css/fontawesome-all.min.css">
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-59508056-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script src="//www.google-analytics.com/analytics.js"></script>
-</head>
-<body>
+<style>
+    header {
+        position: absolute;
+    }
+</style>
 <div class="page" id="page">
     <header>
         <div class="page-header">
@@ -91,7 +33,7 @@
     </header>
     <main class="main-content">
         <div class="banner" id="banner">
-            <div class="text">
+            <div class="text" data-scale>
                 <p class="first">Hello, my name is</p>
                 <h1>Ermin Muratović</h1>
                 <p class="description">I'm an enthusiastic software engineer from Klagenfurt, Austria, who is always
@@ -146,38 +88,38 @@
         <div class="expertin" id="expertin">
             <h1>Expert in</h1>
             <div class="expertin-list">
-                <div class="expertin-item" data-animate data-animate-offset="10">
+                <div class="expertin-item" data-animate data-animate-offset-element-height>
                     <i class="fal fa-desktop fa-5x"></i>
                     <h2>Web</h2>
                     <p>Design and development of web solutions from personal blog or small business websites to
                         e-commerce stores and web applications.</p>
                 </div>
-                <div class="expertin-item" data-animate data-animate-offset="10">
+                <div class="expertin-item" data-animate data-animate-offset-element-height>
                     <i class="fal fa-mobile fa-5x"></i>
                     <h2>Mobile</h2>
                     <p>Web applications optimized for mobile devices or native applications developed for Android and
                         iOS.</p>
                 </div>
-                <div class="expertin-item" data-animate data-animate-offset="10">
+                <div class="expertin-item" data-animate data-animate-offset-element-height>
                     <i class="fal fa-cloud fa-5x"></i>
                     <h2>Hosting</h2>
                     <p>Web hosting and long-term support from a single source at a low flat-rate.</p>
                 </div>
             </div>
             <div class="expertin-list">
-                <div class="expertin-item" data-animate data-animate-offset="10">
+                <div class="expertin-item" data-animate data-animate-offset-element-height>
                     <i class="fal fa-briefcase fa-5x"></i>
                     <h2>Marketing</h2>
                     <p>Planning and running e-mail newsletter and social media campaigns for your website, application,
                         product or service.</p>
                 </div>
-                <div class="expertin-item" data-animate data-animate-offset="10">
+                <div class="expertin-item" data-animate data-animate-offset-element-height>
                     <i class="fal fa-paint-brush fa-5x"></i>
                     <h2>Print</h2>
                     <p>Design and print of banners, flyers, corporate or personal business cards, letterheads,
                         brochures, promotional items, signboards and other printed materials.</p>
                 </div>
-                <div class="expertin-item" data-animate data-animate-offset="10">
+                <div class="expertin-item" data-animate data-animate-offset-element-height>
                     <i class="fal fa-handshake fa-5x"></i>
                     <h2>Social Media</h2>
                     <p>Professional social media maintenance for your online presence to keep you connected with your
@@ -190,7 +132,7 @@
             <h1>Portfolio</h1>
             <p>Take a look at some of my projects</p>
             <div class="portfolio-list">
-                <div class="portfolio-item reverse" data-animate data-animate-offset="100">
+                <div class="portfolio-item reverse" data-animate data-animate-offset-element-height>
                     <div class="description">
                         <h3>Friseurstudio Edina</h3>
                         <p class="type">website, business card, signboard, gift card</p>
@@ -203,7 +145,7 @@
                              data-src="resources/images/friseurstudio-edina-showcase.png"/>
                     </div>
                 </div>
-                <div class="portfolio-item" data-animate data-animate-offset="100">
+                <div class="portfolio-item" data-animate data-animate-offset-element-height>
                     <div class="showcase">
                         <img src="resources/images/default.png"
                              data-src="resources/images/privat-auto-import-showcase.png"/>
@@ -219,9 +161,28 @@
                 </div>
             </div>
         </div>
-        <div class="blog" id="blog">
+        <div class="blog-preview" id="blog">
             <h1>Blog</h1>
             <p>I write regularly about code, design & life.</p>
+            <div class="posts">
+                {% for post in site.posts %}
+                <div class="post">
+                    <p>
+                        <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+                        {% if post.category %}
+                        <i class="fas fa-circle"></i> <span class="category">{{ post.category }}</span>
+                        {% endif %}
+                        {% if post.tags.size > 0 %}
+                        <i class="fas fa-circle"></i> <span class="tags">{{ post.tags | join: ", " }}</span>
+                        {% endif %}
+                    </p>
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <div class="separator"></div>
+                    <p class="preview-text">{{ post.content | strip_html | truncatewords:75}}</p>
+                    <a href="{{ post.url }}">Read article</a>
+                </div>
+                {% endfor %}
+            </div>
         </div>
         <div class="contact" id="contact">
             <div class="text">
@@ -285,7 +246,4 @@
         <p class="copyright">&copy; 2017 - Handcrafted by Ermin Muratović</p>
     </footer>
 </div>
-
-<script src="scripts/script.js"></script>
-</body>
-</html>
+<script src="/scripts/script.js"></script>

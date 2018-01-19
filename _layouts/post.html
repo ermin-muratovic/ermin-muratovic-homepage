@@ -1,0 +1,70 @@
+---
+layout: base
+---
+
+{% include blog-header.html type="post" %}
+<article role="main" class="blog-post">
+    {% if page.image %}
+    <div class="banner-image">
+        <img src="{{ page.image }}" alt="{{ page.title }}" />
+    </div>
+    {% endif %}
+    <p class="post-details">
+        <span class="date">{{ page.date | date: "%B %e, %Y" }}</span>
+        {% if page.category %}
+        <i class="fas fa-circle"></i> <span class="category">{{ page.category }}</span>
+        {% endif %}
+        {% if page.tags.size > 0 %}
+        <i class="fas fa-circle"></i> <span class="tags">{{ page.tags | join: ", " }}</span>
+        {% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+</article>
+
+{% if page.social-share %}
+{% include social-share.html %}
+{% endif %}
+
+<div class="pager blog-pager blog-preview">
+    {% if page.previous.url %}
+    <div class="post previous">
+        <h3>Previous post</h3>
+        <p>
+            <span class="date">{{ page.previous.date | date: "%B %e, %Y" }}</span>
+            {% if page.previous.category %}
+            <i class="fas fa-circle"></i> <span class="category">{{ page.previous.category }}</span>
+            {% endif %}
+            {% if page.previous.tags.size > 0 %}
+            <i class="fas fa-circle"></i> <span class="tags">{{ page.previous.tags | join: ", " }}</span>
+            {% endif %}
+        </p>
+        <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+        <div class="separator"></div>
+        <p class="preview-text">{{ page.previous.content | strip_html | truncatewords:75}}</p>
+        <a href="{{ page.previous.url }}">Read article</a>
+    </div>
+    {% endif %}
+    {% if page.next.url %}
+    <div class="post next">
+        <h3>Next post</h3>
+        <p>
+            <span class="date">{{ page.next.date | date: "%B %e, %Y" }}</span>
+            {% if page.next.category %}
+            <i class="fas fa-circle"></i> <span class="category">{{ page.next.category }}</span>
+            {% endif %}
+            {% if page.next.tags.size > 0 %}
+            <i class="fas fa-circle"></i> <span class="tags">{{ page.next.tags | join: ", " }}</span>
+            {% endif %}
+        </p>
+        <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
+        <div class="separator"></div>
+        <p class="preview-text">{{ page.next.content | strip_html | truncatewords:75}}</p>
+        <a href="{{ page.next.url }}">Read article</a>
+    </div>
+    {% endif %}
+</div>
+
+{% include blog-footer.html type="post" %}
+
+<script src="/scripts/script.js"></script>
