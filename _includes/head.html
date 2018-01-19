@@ -6,11 +6,6 @@
     <title>{{ page.title }}</title>
 
     <meta name="author" content="Ermin Muratović">
-    {% if page.title %}
-        {{ page.title }}
-    {% else %}
-        {{ site.title }}
-    {% endif %}
     <meta name="description" content="{{ page.content | strip_html | truncatewords:175 }}">
     <meta name="language" content="en">
     <meta name="city" content="Klagenfurt">
