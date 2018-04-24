@@ -567,6 +567,17 @@ nav#menu ul li a.primary:hover {
     padding-right: 60px;
 }
 
+.support-ad {
+    padding: 100px 5vw;
+}
+.support-ad > h1 {
+    margin-bottom: 0px;
+}
+
+.support-ad > h1+p {
+    margin-bottom: 30px;
+}
+
 .advertisement p {
     margin: 0;
 }

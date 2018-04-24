@@ -230,6 +230,20 @@ title: Ermin Muratović
                 </div>
             </div>
         </div>
+        <div class="support-ad" id="support-ad">
+            <div class="text">
+                <h2>Support me</h2>
+                <p>If you like the content here or from any of my projects and want to support me, please use my affiliate links below.</p>
+                <br/>
+                <div class="amazon-affiliate">
+                    <a target="_blank" href="https://www.amazon.de/ref=rd_www_amazon_at/?site-redirect=at&_encoding=UTF8&tag=wwwmuratovica-21&linkCode=ur2&linkId=2c5826b45f2f2a2ceef32e6511a12d4b&camp=1638&creative=6742">
+                        <img src="resources/images/default.png" width="100" data-src="resources/images/amazon_logo_rgb.jpg" />
+                    </a>
+                    <img src="//ir-de.amazon-adsystem.com/e/ir?t=wwwmuratovica-21&l=ur2&o=3" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                    <p>Amazon is the online super store. By using <a target="_blank" href="https://www.amazon.de/ref=rd_www_amazon_at/?site-redirect=at&_encoding=UTF8&tag=wwwmuratovica-21&linkCode=ur2&linkId=2c5826b45f2f2a2ceef32e6511a12d4b&camp=1638&creative=6742">my affiliate link to amazon</a>, you will be supporting my work. I will get a small percentage of the total sale on almost any purchase you make through my affiliate links which will help me to provide you with even more great content.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="page-footer">
         <div class="impressum">
