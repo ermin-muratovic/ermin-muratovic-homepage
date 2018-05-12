@@ -274,6 +274,7 @@ nav#menu ul li a.primary:hover {
     max-width: unset;
     left: -20vw;
     position: absolute;
+    opacity: .9;
 }
 
 .banner button {
@@ -576,6 +577,10 @@ nav#menu ul li a.primary:hover {
 
 .support-ad > h1+p {
     margin-bottom: 30px;
+}
+
+.support-ad .amazon-affiliate {
+    padding: 20px;
 }
 
 .advertisement p {
