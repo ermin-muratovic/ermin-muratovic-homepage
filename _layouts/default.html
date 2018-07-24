@@ -2,6 +2,10 @@
 layout: base
 ---
 
-<div class="page" id="page" role="main">
+{% include header.html %}
+<main class="main-content" role="main">
     {{ content }}
-</div>
+</main>
+{% include contact.html %}
+{% include footer.html %}
+<script src="/scripts/script.js"></script>
