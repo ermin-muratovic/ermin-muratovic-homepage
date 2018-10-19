@@ -229,7 +229,7 @@ nav#menu ul li a.primary:hover {
     background: #fff;
     line-height: 2em;
     padding: 150px 5vw 0 5vw;
-    min-height: 80vh;
+    height: 80vh;
     background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
     border: 1px solid #f0f0f0;
 }
@@ -677,7 +677,6 @@ body { font-size: 18px; letter-spacing: 1px; }
 
     .banner .image img {
         position: relative;
-        max-height: 90vh;
         left: 0;
     }
 
