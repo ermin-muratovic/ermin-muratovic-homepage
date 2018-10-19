@@ -12,7 +12,7 @@ title: Ermin Muratović
     <div class="banner" id="banner">
         <div class="text" data-scale>
             <p class="first">Hello, my name is</p>
-            <h1>Ermin Muratović</h1>
+            <h1>Ermin <br/><span>Muratović</span></h1>
             <p class="description">I'm an enthusiastic software engineer from Klagenfurt, Austria, who is always
                 bright and eager for new challenges.</p>
             <div class="social">
