@@ -61,6 +61,9 @@ title: Ermin Muratović
         <div class="image">
             <img src="resources/images/default.png" data-src="resources/images/ermin-1.png"/>
         </div>
+        <div class="icon-scroll-container">
+            <div class="icon-scroll"></div>
+        </div>
     </div>
     <div class="expertin" id="expertin">
         <h1>Expert in</h1>

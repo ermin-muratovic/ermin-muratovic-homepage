@@ -1,8 +1,12 @@
 /*
  * GENERAL
  */
+@import "fonts.css";
 
 body {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
     font-family: "Montserrat", "Open Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -82,26 +86,28 @@ header .page-header {
     display: flex;
     flex-direction: row;
     padding: 40px 5vw;
+    z-index: 10;
+    position: relative;
 }
-header h1 {
+header .page-logo h1 {
     margin: 0px;
     font-weight: 100;
 }
-header h1 a {
-    color: #000 !important;
-}
-header h1 span {
+header .page-logo h1.color {
     font-weight: 300;
     color: #4a071e;
     background: #e91e63;
     background: linear-gradient(to right, #e91e63 0%, #4a071e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     background-clip: text;
+    -webkit-background-clip: text;
     text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
-header h1 p {
-    font-size: .4em;
+header .page-logo p {
+    margin: 0px;
+    font-weight: 100;
+    font-size: .88em;
 }
 
 header .menu-toggle {
@@ -219,10 +225,55 @@ nav#menu ul li a.primary:hover {
 }
 
 /*
+ * icon-scroll
+ */
+.icon-scroll-container {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 89vh;
+    left: 0px;
+}
+.icon-scroll {
+    width: 25px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 0 0 0 1px #000;
+    border-radius: 25px;
+    position: relative;
+}
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 3px;
+    height: 8px;
+    background: #000;
+    margin-left: -1.5px;
+    top: 10px;
+    border-radius: 4px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+
+/*
  * CONTENT
  */
 
 .banner {
+    position: relative;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -250,7 +301,7 @@ nav#menu ul li a.primary:hover {
 }
 .banner .text h1 {
     font-size: 2em;
-    line-height: .9em;
+    line-height: 1em;
     font-weight: 100;
     margin-left: -7px;
     margin-bottom: 15px;
@@ -607,7 +658,6 @@ footer p.copyright {
 
 /* Extra small devices (phones, less than 600px) */
 /* No media query since this is the default */
-body { font-size: 18px; letter-spacing: 1px; }
 
 /* Small devices (tablets, 600px and up) */
 @media (min-width: 600px) {
