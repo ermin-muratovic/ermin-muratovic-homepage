@@ -10,6 +10,7 @@ title: Ermin Muratović
 </style>
 <div class="page" id="page">
     <div class="banner" id="banner">
+        <img class="banner-bg" src="resources/images/iot-network.png" />
         <div class="text" data-scale>
             <p class="first">Hello, my name is</p>
             <h1>Ermin <br/><span>Muratović</span></h1>
