@@ -42,7 +42,7 @@ title: Ermin Muratović
                 </div>
             </div>
             <div>
-                <button class="align-middle rotate-icon" onclick="scrollToMore();"><span>More about me</span> <i
+                <button class="btn align-middle rotate-icon" onclick="scrollToMore();"><span>More about me</span> <i
                         class="far fa-angle-right fa-lg"></i></button>
             </div>
             <!--p class="description detail">
@@ -60,7 +60,8 @@ title: Ermin Muratović
             <!-- werbevideos, imagevideos, marketing, foto, editing -->
         </div>
         <div class="image">
-            <img src="resources/images/default.png" data-src="resources/images/ermin-1.png"/>
+            <img src="resources/images/default.png" data-src="resources/images/iot-parts-2.png"/>
+            <!--img src="resources/images/default.png" data-src="resources/images/ermin-1.png"/-->
         </div>
         <div class="icon-scroll-container">
             <div class="icon-scroll"></div>
