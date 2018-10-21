@@ -42,8 +42,7 @@ title: Ermin Muratović
                 </div>
             </div>
             <div>
-                <button class="btn align-middle rotate-icon" onclick="scrollToMore();"><span>More about me</span> <i
-                        class="far fa-angle-right fa-lg"></i></button>
+                <button class="btn align-middle rotate-icon" onclick="scrollToMore();"><span>More about me</span> <i class="far fa-angle-right fa-lg"></i></button>
             </div>
             <!--p class="description detail">
                 Ich bin ein freiberuflicher Softwareentwickler aus Klagenfurt.
