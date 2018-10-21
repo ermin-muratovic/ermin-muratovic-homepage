@@ -284,6 +284,21 @@ nav#menu ul li a.primary:hover {
     background: linear-gradient(to bottom right, #fff 0%, #f0f0f0 100%);
     border: 1px solid #f0f0f0;
 }
+.banner .banner-bg {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .2;
+    z-index: 0;
+}
+.banner .text,
+.banner .image,
+.banner .icon-scroll-container {
+    z-index: 5;
+}
 .banner p, .banner a {
     line-height: 2em;
 }
@@ -733,21 +748,6 @@ footer p.copyright {
     .banner {
         height: 95vh;
         flex-direction: row;
-    }
-    .banner .banner-bg {
-        position: absolute;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: .2;
-        z-index: 0;
-    }
-    .banner .text,
-    .banner .image,
-    .banner .icon-scroll-container {
-        z-index: 5;
     }
     .banner .text h1 {
         font-size: 4em;
