@@ -41,5 +41,5 @@ kramdown:
   input: GFM
 
 plugins:
-  - jekyll-multiple-languages-plugin
+#  - jekyll-multiple-languages-plugin
 #  - jekyll-paginate
