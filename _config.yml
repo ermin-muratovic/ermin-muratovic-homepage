@@ -1,8 +1,16 @@
 # Site settings
 
+url: http://www.erminmuratovic.com
 baseurl: ""
 title: Ermin Muratovic Homepage
 description: Ermin Muratovic Portfolio Homepage
+
+languages: ["en", "de"]
+exclude_from_localizations: ["assets", "components"]
+defaultLang: en
+languageNames:
+  de: Deutsch
+  en: English
 
 author:
   name: Ermin Muratovic
@@ -32,5 +40,6 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-# plugins:
+plugins:
+  - jekyll-multiple-languages-plugin
 #  - jekyll-paginate

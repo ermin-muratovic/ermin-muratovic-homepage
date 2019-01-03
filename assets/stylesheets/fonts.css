@@ -1,0 +1,70 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=db5d9619-b21e-42a7-aafd-046554bf5132");
+@font-face{
+    font-family:"Posterama_1984 W02 Thin";
+    src:url("../fonts/9f8c4c64-bc42-41a4-9a31-a699049a1e52.eot?#iefix");
+    src:url("../fonts/9f8c4c64-bc42-41a4-9a31-a699049a1e52.eot?#iefix") format("eot"),url("../fonts/dff94d2a-9b58-4dd2-ba7e-f793f8ca30b6.woff2") format("woff2"),url("../fonts/861590df-6b79-42a3-8956-e5ff69030d7b.woff") format("woff"),url("../fonts/9d34b286-68b6-4f70-bb4c-50801dd126b1.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_1984 W02 Light";
+    src:url("../fonts/3a288c0c-1294-442a-bef1-bf1fed038170.eot?#iefix");
+    src:url("../fonts/3a288c0c-1294-442a-bef1-bf1fed038170.eot?#iefix") format("eot"),url("../fonts/12bad3b3-c330-4f4f-9fa4-1cb8fc18ccaf.woff2") format("woff2"),url("../fonts/bdffc61f-ad68-4a67-bc74-c5e55ab41050.woff") format("woff"),url("../fonts/0e6a06d6-7877-468b-8267-309d91f1ca75.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_1984 W02 Regular";
+    src:url("../fonts/bb39800d-e824-472f-aeff-3754c4133d17.eot?#iefix");
+    src:url("../fonts/bb39800d-e824-472f-aeff-3754c4133d17.eot?#iefix") format("eot"),url("../fonts/3fa8c51f-3447-4499-b5a7-59b039249a6e.woff2") format("woff2"),url("../fonts/a614c051-fff5-4b12-a2ea-c339d56f1d84.woff") format("woff"),url("../fonts/7aca93b2-dc55-42d7-81b3-a0c4f14cecbf.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_1984 W02 Bold";
+    src:url("../fonts/0fa2547a-f471-46d3-9513-81ffb4021a97.eot?#iefix");
+    src:url("../fonts/0fa2547a-f471-46d3-9513-81ffb4021a97.eot?#iefix") format("eot"),url("../fonts/93b76202-e475-45ea-8d10-09dc3c466593.woff2") format("woff2"),url("../fonts/852146c3-1705-4b8b-b540-b4b44040a570.woff") format("woff"),url("../fonts/7b377b8a-7c8a-45bb-8ce4-61f723f46677.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_1984 W02 Black";
+    src:url("../fonts/85212a93-9d80-4291-9a73-8d0650c2b6ef.eot?#iefix");
+    src:url("../fonts/85212a93-9d80-4291-9a73-8d0650c2b6ef.eot?#iefix") format("eot"),url("../fonts/5cca51df-c684-4543-9740-b48ca41d2e9a.woff2") format("woff2"),url("../fonts/cade476a-186c-4043-9e8b-56c9c983f9ac.woff") format("woff"),url("../fonts/d4a967f7-e859-4349-a4cd-3c502a91d909.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_2001 W02 Thin";
+    src:url("../fonts/2236cc18-11c6-4f53-92c3-ec1a69cfaa74.eot?#iefix");
+    src:url("../fonts/2236cc18-11c6-4f53-92c3-ec1a69cfaa74.eot?#iefix") format("eot"),url("../fonts/6b16792f-125f-4130-8c0f-9296c924c756.woff2") format("woff2"),url("../fonts/29d7eabb-9c2c-490d-8654-163b16d51371.woff") format("woff"),url("../fonts/fd27fbea-eedd-4906-94b1-4878617ecc24.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_2001 W02 Light";
+    src:url("../fonts/27f53e55-1b14-4cf4-aa92-ec8ec14a9391.eot?#iefix");
+    src:url("../fonts/27f53e55-1b14-4cf4-aa92-ec8ec14a9391.eot?#iefix") format("eot"),url("../fonts/c204278c-7717-46ea-b331-46b542eb066c.woff2") format("woff2"),url("../fonts/6fe3f139-f10e-47c0-b4b6-fe3d55e76388.woff") format("woff"),url("../fonts/70bd845d-67bf-4a9d-b139-bd849a121bb2.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_2001 W02 Regular";
+    src:url("../fonts/e8fef8fb-099e-476d-b47e-39e13d5bc040.eot?#iefix");
+    src:url("../fonts/e8fef8fb-099e-476d-b47e-39e13d5bc040.eot?#iefix") format("eot"),url("../fonts/587a9679-8168-4713-aec3-e0edf49becdd.woff2") format("woff2"),url("../fonts/44479d67-7d60-448b-a307-62ba4478508e.woff") format("woff"),url("../fonts/1050e852-b905-46b8-be45-f627d08626f9.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_2001 W02 Bold";
+    src:url("../fonts/6bc6ae48-de89-4c10-845d-67cf50363333.eot?#iefix");
+    src:url("../fonts/6bc6ae48-de89-4c10-845d-67cf50363333.eot?#iefix") format("eot"),url("../fonts/0242cce5-34e5-435d-8e54-0287fe478f82.woff2") format("woff2"),url("../fonts/4fbfa431-bd45-4f0c-adf7-913b1747f4a5.woff") format("woff"),url("../fonts/fba12ec7-308e-4c28-abe2-845fd94d4d65.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Posterama_2001 W02 Black";
+    src:url("../fonts/e008dedf-eb09-4a4f-a276-edfe6da90b07.eot?#iefix");
+    src:url("../fonts/e008dedf-eb09-4a4f-a276-edfe6da90b07.eot?#iefix") format("eot"),url("../fonts/c2b910f0-6fcb-4930-b2ac-5c95285d1c8a.woff2") format("woff2"),url("../fonts/c9139bff-6a8e-4765-9c98-f0ce3b25322c.woff") format("woff"),url("../fonts/23f75b81-6343-4bf5-b4b3-3464d3def954.ttf") format("truetype");
+}
+
+.fp-84-light {
+    font-family: 'Posterama_1984 W02 Light';
+}
+.fp-84-regular {
+    font-family: 'Posterama_1984 W02 Regular';
+}
+.fp-84-bold {
+    font-family: 'Posterama_1984 W02 Bold';
+}
+.fp-01-light {
+    font-family: 'Posterama_2001 W02 Light';
+}
+.fp-01-regular {
+    font-family: 'Posterama_2001 W02 Regular';
+}
+.fp-01-bold {
+    font-family: 'Posterama_2001 W02 Bold';
+}

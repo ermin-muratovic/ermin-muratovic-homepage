@@ -3,11 +3,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ page.title }}</title>
+    <!--title>{{ page.title }}</title-->
+    <title>{% t site.name %} - {% t site.tagline %}</title>
 
     <meta name="author" content="Ermin Muratović">
-    <meta name="description" content="{{ page.content | strip_html | truncatewords:175 }}">
-    <meta name="language" content="en">
+    <!--meta name="description" content="{{ page.content | strip_html | truncatewords:175 }}"-->
+    <meta name="description" content="{% t site.description %}"/>
+    <meta name="keywords" content="{% t site.keywords %}"/>
+
+    <meta name="language" content="{{ site.lang }}">
     <meta name="city" content="Klagenfurt">
     <meta name="country" content="Austria">
     <meta name="state" content="Carinthia">
@@ -37,8 +41,8 @@
     <link rel="shortcut icon" href="http://gravatar.com/avatar/2c3595494e77b03b6178458d51f32fb1?s=32" type="image/x-icon">
     <meta name="theme-color" content="#e3e4e5">
 
-    <link rel="stylesheet" href="/stylesheets/reset.css">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="/assets/stylesheets/styles.css">
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Montserrat:100,300,500,700,900">

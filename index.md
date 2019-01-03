@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ermin Muratović
+title: site.title
 ---
 
 <style>
@@ -10,7 +10,7 @@ title: Ermin Muratović
 </style>
 <div class="page" id="page">
     <div class="banner" id="banner">
-        <img class="banner-bg" src="resources/images/iot-network.png" />
+        <img class="banner-bg" src="assets/images/iot-network.png" />
         <div class="text" data-scale>
             <p class="first">Hello, my name is</p>
             <h1>Ermin <br/><span>Muratović</span></h1>
@@ -41,9 +41,9 @@ title: Ermin Muratović
                     </div>
                 </div>
             </div>
-            <div>
+            <!--div>
                 <button class="btn align-middle rotate-icon" onclick="scrollToMore();"><span>More about me</span> <i class="far fa-angle-right fa-lg"></i></button>
-            </div>
+            </div-->
             <!--p class="description detail">
                 Ich bin ein freiberuflicher Softwareentwickler aus Klagenfurt.
                 Haben Sie Interesse an einer modernen Webseite, Webanwendung oder mobilen Applikation, dann <a href="mailto:ermin@muratovic.at">kontaktieren</a> Sie mich bitte.
@@ -59,8 +59,7 @@ title: Ermin Muratović
             <!-- werbevideos, imagevideos, marketing, foto, editing -->
         </div>
         <div class="image">
-            <img src="resources/images/default.png" data-src="resources/images/iot-parts-2.png"/>
-            <!--img src="resources/images/default.png" data-src="resources/images/ermin-1.png"/-->
+            <img src="assets/images/default.png" data-src="/assets/images/ermin-2.png" />
         </div>
         <div class="icon-scroll-container">
             <div class="icon-scroll"></div>
@@ -137,14 +136,14 @@ title: Ermin Muratović
                     <a href="http://friseurstudio-edina.at" target="_blank">Visit website</a>
                 </div>
                 <div class="showcase">
-                    <img src="resources/images/default.png"
-                         data-src="resources/images/friseurstudio-edina-showcase.png"/>
+                    <img src="assets/images/default.png"
+                         data-src="assets/images/friseurstudio-edina-showcase.png"/>
                 </div>
             </div>
             <div class="portfolio-item" data-animate data-animate-offset="100">
                 <div class="showcase">
-                    <img src="resources/images/default.png"
-                         data-src="resources/images/privat-auto-import-showcase.png"/>
+                    <img src="assets/images/default.png"
+                         data-src="assets/images/privat-auto-import-showcase.png"/>
                 </div>
                 <div class="description">
                     <h3>Privat Auto Import</h3>

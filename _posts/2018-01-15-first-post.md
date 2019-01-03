@@ -28,7 +28,7 @@ tags: [personal]
                 border: 1px solid #000;
             }
         </style>
-        <img src="/resources/images/ermin-2.jpg" />
+        <img src="/assets/images/ermin-2.jpg" />
     </div>
 </div>
 <div class="text">

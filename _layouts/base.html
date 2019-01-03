@@ -1,7 +1,12 @@
 <!doctype  html>
-<html lang="en-US">
+<html lang="{{ site.lang }}">
 {% include head.html %}
 <body>
+<script>
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang.indexOf('de') == -1)
+        window.location = '/en/';
+</script>
 {{ content }}
 </body>
 </html>

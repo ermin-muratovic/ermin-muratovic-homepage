@@ -1,0 +1,15 @@
+site:
+  name: Ermin Muratović
+  title: Ermin Muratović ITSolutions
+  tagline: Digital in die Zukunft!
+  description: Wir bringen dein Unternehmen auf den digitalen Zweig!
+  keywords: IT, Digital, Software, Webseite
+
+main:
+  welcomeSection:
+    hello: Hallo, mein Name ist
+    about: I'm an enthusiastic software engineer from Klagenfurt, Austria, who is always bright and eager for new challenges.
+    social_intro: You can find me on
+
+impressum:
+  title: Impressum - Ermin Muratović ITSolutions
