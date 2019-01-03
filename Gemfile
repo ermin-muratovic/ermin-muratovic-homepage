@@ -1,6 +1,7 @@
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll-multiple-languages-plugin', group: :jekyll_plugins
-gem 'tzinfo-data'
+gem "jekyll", ">= 3.6.3"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-multiple-languages-plugin", group: :jekyll_plugins
+gem "tzinfo-data"
