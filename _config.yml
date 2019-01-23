@@ -11,6 +11,7 @@ defaultLang: en
 languageNames:
   de: Deutsch
   en: English
+destination: ./docs # Github Pages custom build, because of additional plugins
 
 author:
   name: Ermin Muratovic
