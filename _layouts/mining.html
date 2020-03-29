@@ -1,0 +1,18 @@
+<!doctype  html>
+<html lang="{{ site.lang }}">
+{% include head_mining.html %}
+<body>
+    <script>
+        var lang = navigator.language || navigator.userLanguage;
+        if (lang.indexOf('de') == -1)
+            window.location = '/en/';
+    </script>
+    {% include header.html %}
+    <main class="main-content" role="main">
+        {{ content }}
+    </main>
+    {% include contact.html %}
+    {% include footer.html %}
+    <script src="/assets/scripts/script.js"></script>
+</body>
+</html>
